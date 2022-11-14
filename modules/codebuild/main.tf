@@ -29,7 +29,7 @@ resource "aws_codebuild_source_credential" "gitcred" {
 
 # CodeBuild Project
 resource "aws_codebuild_project" "project" {
-  depends_on    = [null_resource.import_source_credentials]
+  depends_on    = [aws_codebuild_source_credential.gitcred]
   name          = local.codebuild_project_name
   description   = local.description
   build_timeout = "120"
