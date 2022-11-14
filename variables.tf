@@ -10,7 +10,7 @@ variable "aws_region" {
 }
 
 variable "aws_profile" {
-  default = "inzein"
+  default = "terraform"
 }
 
 variable "aws_account" {
