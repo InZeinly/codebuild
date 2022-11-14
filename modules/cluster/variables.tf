@@ -25,7 +25,7 @@ variable "aws_dns" {
 #Variables for Application Load Balancer
 variable "app_port" {
   description = "The application port"
-  default     = 5000
+  default     = 80
 }
 
 variable "app_target_port" {
