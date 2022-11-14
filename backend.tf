@@ -9,7 +9,7 @@
 
 #     backend "s3" {
 #         encrypt = true
-#         bucket  = "s3bucket"
+#         bucket  = "s3bucketlqlqlqllq123"
 #         region  = "eu-central-1"
 #         key     = "state"
 #     }
