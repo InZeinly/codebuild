@@ -1,10 +1,11 @@
 TAG ?= latest
 REGISTRY_ID ?= 152617774363
 REPOSITORY_REGION ?= eu-central-1
-APP_NAME ?= testapp
-ENV_NAME ?= testenv
-REPO_NAME = $(REGISTRY_ID).dkr.ecr.$(REPOSITORY_REGION).amazonaws.com/${APP_NAME}-${ENV_NAME}
-# -f ./Dockerfile .
+APP_NAME ?= app
+ENV_NAME ?= project
+NAME_CONTAINER ?= nginx
+REPO_NAME = $(REGISTRY_ID).dkr.ecr.$(REPOSITORY_REGION).amazonaws.com/${APP_NAME}-${ENV_NAME}-${NAME_CONTAINER}
+
 .PHONY: build
 build:
 	$(MAKE) docker-login
