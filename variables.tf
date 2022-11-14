@@ -2,7 +2,7 @@
 variable "bucket_name" {
   type        = string
   description = "S3 Bucket name"
-  default     = "s3bucketlqlqlqllq123"
+  default     = "s3bucketasdasdasdasd123"
 }
 
 variable "aws_region" {
