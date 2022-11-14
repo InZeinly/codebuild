@@ -8,4 +8,4 @@ image_tag = "0.0.1"
 repo_url = "https://github.com/InZeinly/codebuild"
 git_trigger_event = "PUSH"
 app_count = 3
-branch_pattern = "^refs/heads/main$
+branch_pattern = "^refs/heads/main$"
